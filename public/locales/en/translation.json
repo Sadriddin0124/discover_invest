@@ -1,0 +1,105 @@
+{
+    "navbar": {
+        "item1": "About",
+        "item2": "Projects",
+        "item3": "Career",
+        "item4": "News",
+        "item5": "Contacts"
+    },
+    "header": {
+        "title": "DISCOVER INVEST",
+        "subtitle": "Perfection in everything",
+        "btn1": "Projects",
+        "btn2": "Contacts"
+    },
+    "about": {
+        "top": "About",
+        "title": "DISCOVER INVEST",
+        "desc": "We don't just create projects, we create new opportunities. By building state-scale facilities, we are building the future. We care about the environment: the company takes full responsibility for the environmental aspects related to the construction and operation of buildings and infrastructure.",
+        "employees": "The number of employees",
+        "projects": "projects",
+        "complexes": "Residential complexes",
+        "marketplace": "14 years on marketplace",
+        "techniques": "Special techniques recuperated",
+        "hospitals": "Hospitals"
+    },
+    "advantages": {
+        "top": "Our",
+        "title": "advantages",
+        "title1": "Our team",
+        "title2": "Positive customer approach",
+        "title3": "All work guaranteed",
+        "desc1": "The company recruits experienced employees on a competitive basis",
+        "desc2": "By looking at the great work we have done through our website, you will be sure that we have earned the trust of our customers",
+        "desc3": "We perform our mission carefully and appreciate your belief in our company All mistakes were clearly corrected"
+    },
+    "projects": {
+        "top": "Our",
+        "title": "Projects",
+        "title1": "Magic City",
+        "desc1": "This is a large-scale socially significant project. The cultural and entertainment cluster in Tashkent is one of the new attractions.",
+        "title2": "Gardens Residence",
+        "desc2": "Multifunctional residential complex created to provide comfort to the residents of Uzbekistan.",
+        "title3": "Fonon",
+        "desc3": "A grandiose residential area in the heart of the capital.",
+        "title4": "Invento",
+        "desc4": "Fonon is a jewelry production plant in Uzbekistan built on the basis of Italian ones in 2020. Fonon is the only large enterprise in Central Asia producing jewelry from precious metals in European and Oriental styles.",
+        "title5": "Presidential School",
+        "desc5": "International kindergarten and school located in the international business center of Tashkent City.",
+        "title6": "Boulevard",
+        "desc6": "This is an educational institution that provides knowledge at an international level",
+        "btn": "All projects"
+    },
+    "projectsPage": {
+        "title": "Projects",
+        "subtitle": "We don't just create projects, we create new opportunities. By building state-scale facilities, we are building the future. We care about the environment:"
+    },
+    "news": {
+        "top": "Company",
+        "title": "news",
+        "date1": "2023-01-27",
+        "date2": "2022-10-02",
+        "date3": "2022-12-19",
+        "date4": "2023-01-27",
+        "subtitle1": "Discover Invest congratulates everyone on a coming Happy New Year 2023!",  
+        "subtitle2": "THE DAY WHEN THE CONSTITUTION OF THE REPUBLIC OF UZBEKISTAN WAS ADOPTED",
+        "subtitle3":  "We continue to introduce you to Discover Invest's wide range of construction properties.",
+        "subtitle4": "Who is the project manager of construction?",
+        "btn": "All news",
+        "viewMore": "View more",
+        "desc1": "Discover Invest has several construction project managers. This is the specialist responsible for the successful sale of real estate building. Directs the entire process, from the stage of planning and approval of project documentation to the commissioning of the building and performs post-project support as well.",
+        "desc2": "We wish that every day of the next year opens up new prospects and that there are always reliable partners nearby. Good health, happiness and good luck in all your endeavors!",
+        "desc3": "Discover Invest construction company expresses its deep respect and congratulates you on the Constitution Day of the Republic of Uzbekistan! We sincerely congratulate you on the holiday and wish each of you well-being, success, a happy and peaceful future!",
+        "desc4": "We continue to introduce you to Discover Invest's wide range of construction properties. Among them is the Yangi Choshtepa residential complex  which is being built in the Yangihayot town of Tashkent. The total area of ​​the settlement is 12 hectares. To date, 29 houses have been built and handed over by the company."
+    },
+    "newsPage": {
+        "title": "News",
+        "subtitle": "We don't just create projects, we create new opportunities. By building state-scale facilities, we are building the future. We care about the environment:"
+    },
+    "contacts": {
+        "title": "Contacts",
+        "title1": "Address",
+        "title2": "Phone",
+        "title3": "Working hours",
+        "desc1": "Uzbekistan, Tashkent, National Park of Uzbekistan named after Alisher Navoi",
+        "desc2": "+998 71 288 88 88",
+        "desc3": "09:00 - 18:00 Mon-Sat",
+        "num": "Phone number",
+        "name": "Name",
+        "name2": "What is your name?",
+        "feedback": "Feedback",
+        "notification": "Message sent successfully!"
+    },
+    "team": {
+        "top": "Our",
+        "title": "team",
+        "name1": "Norbekov Shavkat Bo'riboy o'g'li",
+        "name2": "Artiqbaev Saxobiddin Doniyor o'g'li",
+        "name3": "Kuziev Jakhongir Bakhodirovich",
+        "name4": "Boltaev Obidjon Uchqun o'g'li",
+        "name5": "Xusanov Akromjon Turaxon o'g'li",
+        "desc1": "Project Manager",
+        "desc2": "Construction site supervisor"
+    }
+}
+  

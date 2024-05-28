@@ -1,0 +1,104 @@
+{
+  "navbar": {
+    "item1": "Haqida",
+    "item2": "Loyihalar",
+    "item3": "Karera",
+    "item4": "Yangiliklar",
+    "item5": "Aloqalar"
+  },
+  "header": {
+    "title": "DISCOVER INVEST",
+    "subtitle": "Hammasida mukammallik",
+    "btn1": "Loyihalar",
+    "btn2": "Aloqalar"
+  },
+  "about": {
+    "top": "Haqida",
+    "title": "DISCOVER INVEST",
+    "desc": "Biz faqat loyihalar yaratmaymiz, balki yangi imkoniyatlar yaratamiz. Davlat miqyosidagi inshootlar qurish orqali biz kelajakni quramiz. Biz atrof-muhitga g'amxo'rlik qilamiz: kompaniya qurilish va infratuzilma bilan bog'liq ekologik jihatlar uchun to'liq javobgar bo'ladi.",
+    "employees": "Xodimlar soni",
+    "projects": "loyihalar",
+    "complexes": "Turar joy majmualari",
+    "marketplace": "14 yil bozorga",
+    "techniques": "Maxsus texnikalar qayta tiklandi",
+    "hospitals": "Shifoxonalar"
+  },
+  "advantages": {
+    "top": "Bizning",
+    "title": "afzalliklar",
+    "title1": "Bizning jamoamiz",
+    "title2": "Mijozlarga ijobiy yondashuv",
+    "title3": "Barcha ishlar kafolatlangan",
+    "desc1": "Kompaniya tajribali xodimlarni raqobat asosida yollaydi",
+    "desc2": "Veb-saytimiz orqali qilgan ajoyib ishlarimizni ko'rib, mijozlarimizning ishonchini qozonganligimizga ishonch hosil qilasiz",
+    "desc3": "Biz o'z missiyamizni ehtiyotkorlik bilan bajarib, kompaniyamizga ishonchingizni qadrlaymiz. Barcha xatolar aniq tuzatildi"
+  },
+  "projects": {
+    "top": "Bizning",
+    "title": "Loyihalar",
+    "title1": "Magic City",
+    "desc1": "Bu keng ko'lamli ijtimoiy ahamiyatga ega loyiha. Toshkentdagi madaniy va ko'ngilochar klaster yangi diqqatga sazovor joylardan biridir.",
+    "title2": "Gardens Residence",
+    "desc2": "O'zbekiston aholisi uchun qulaylik yaratish uchun yaratilgan ko'p funktsional turar joy majmuasi.",
+    "title3": "Fonon",
+    "desc3": "Poytaxtning markazida joylashgan ulkan turar joy hududi.",
+    "title4": "Invento",
+    "desc4": "Fonon 2020 yilda Italiya asosida qurilgan O'zbekistondagi zargarlik ishlab chiqarish zavodi. Fonon Markaziy Osiyoda yevropa va sharq uslubidagi zargarlik buyumlarini ishlab chiqaruvchi yagona yirik korxona hisoblanadi.",
+    "title5": "Prezident Maktabi",
+    "desc5": "Toshkent shahridagi xalqaro biznes markazida joylashgan xalqaro bolalar bog'chasi va maktab.",
+    "title6": "Boulevard",
+    "desc6": "Bu xalqaro darajadagi bilimlarni taqdim etadigan ta'lim muassasasi",
+    "btn": "Barcha loyihalar"
+  },
+  "projectsPage": {
+    "title": "Loyihalar",
+    "subtitle": "Biz faqat loyihalar yaratmaymiz, balki yangi imkoniyatlar yaratamiz. Davlat miqyosidagi inshootlar qurish orqali biz kelajakni quramiz. Biz atrof-muhitga g'amxo'rlik qilamiz:"
+  },
+  "news": {
+    "top": "Kompaniya",
+    "title": "yangiliklar",
+    "date1": "2023-01-27",
+    "date2": "2022-10-02",
+    "date3": "2022-12-19",
+    "date4": "2023-01-27",
+    "subtitle1": "Discover Invest barchani Yangi yil 2023 bilan tabriklaydi!",
+    "subtitle2": "O'ZBEKISTON RESPUBLIKASI KONSTITUTSIYASI QABUL QILINGAN KUN",
+    "subtitle3": "Discover Invest ning keng ko'lamli qurilish mulklari bilan tanishtirishni davom ettiramiz.",
+    "subtitle4": "Qurilish loyihasi menejeri kim?",
+    "btn": "Barcha yangiliklar",
+    "viewMore": "Ko'proq ko'rish",
+    "desc1": "Discover Invest bir nechta qurilish loyihalari menejerlariga ega. Bu ko'chmas mulkni muvaffaqiyatli sotish uchun mas'ul bo'lgan mutaxassisdir. Loyihaning rejalashtirish va hujjatlarni tasdiqlash bosqichidan bino foydalanishga topshirilgunga qadar bo'lgan butun jarayonni boshqaradi va loyiha tugagandan so'ng ham qo'llab-quvvatlashni amalga oshiradi.",
+    "desc2": "Kelgusi yilda har kuni yangi istiqbollar ochilishini va doimo ishonchli hamkorlar yonida bo'lishini tilaymiz. Sog'lik, baxt va barcha tashabbuslaringizda omad tilaymiz!",
+    "desc3": "Discover Invest qurilish kompaniyasi sizga chuqur hurmat izhor qiladi va sizni O'zbekiston Respublikasi Konstitutsiyasi kuni bilan tabriklaydi! Sizni chin dildan tabriklaymiz va har biringizga farovonlik, muvaffaqiyat, baxtli va tinch kelajak tilaymiz!",
+    "desc4": "Discover Invest ning keng ko'lamli qurilish mulklari bilan tanishtirishni davom ettiramiz. Ular orasida Toshkentning Yangihayot shaharchasida qurilayotgan Yangi Choshtepa turar joy majmuasi mavjud. Aholi punktining umumiy maydoni 12 gektarni tashkil etadi. Bugungi kunga qadar kompaniya tomonidan 29 ta uy qurib topshirildi."
+  },
+  "newsPage": {
+    "title": "Yangiliklar",
+    "subtitle": "Biz faqat loyihalar yaratmaymiz, balki yangi imkoniyatlar yaratamiz. Davlat miqyosidagi inshootlar qurish orqali biz kelajakni quramiz. Biz atrof-muhitga g'amxo'rlik qilamiz:"
+  },
+  "contacts": {
+    "title": "Aloqalar",
+    "title1": "Manzil",
+    "title2": "Telefon",
+    "title3": "Ish vaqti",
+    "desc1": "O'zbekiston, Toshkent, Alisher Navoiy nomidagi O'zbekiston milliy bog'i",
+    "desc2": "+998 71 288 88 88",
+    "desc3": "09:00 - 18:00 Dushanba-Shanba",
+    "num": "Telefon raqami",
+    "name": "Ism",
+    "name2": "Ismingiz nima?",
+    "feedback": "Fikr-mulohaza",
+    "notification": "Xabar muvaffaqiyatli jo'natildi!" 
+  },
+  "team": {
+    "top": "Bizning",
+    "title": "jamoa",
+    "name1": "Norbekov Shavkat Bo'riboy o'g'li",
+    "name2": "Artiqbaev Saxobiddin Doniyor o'g'li",
+    "name3": "Kuziev Jakhongir Bakhodirovich",
+    "name4": "Boltaev Obidjon Uchqun o'g'li",
+    "name5": "Xusanov Akromjon Turaxon o'g'li",
+    "desc1": "Loyiha Menejeri",
+    "desc2": "Qurilish maydonchasi nazoratchisi"
+  }
+}
