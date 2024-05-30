@@ -30,7 +30,7 @@ const AllProjects = () => {
   return (
     <section className="">
         <Navbar scrollPosition={scrollPosition}/>
-      <div className="text-white pt-[150px] h-[400px] px-[20px] relative md:px-[80px] gap-[20px] py-[80px] flex w-[100%] items-start md:justify-between flex-col md:flex-row md:items-center">
+      <div className="text-white pt-[150px] h-[400px] px-[20px] relative md:px-[80px] gap-[20px] py-[80px] flex w-[100%] items-start md:justify-between flex-col xl:items-center xl:flex-row md:items-start">
         <h1 className="text-[50px] lg:text-[70px] font-[600]">{title}</h1>
         <p className="max-w-[600px]">{subtitle}</p>
         <img src={SingleImg} alt="SingleImg" className="w-[100%] h-[100%] absolute object-cover left-0 top-0 brightness-50 z-[-1]"/>

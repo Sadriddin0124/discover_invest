@@ -12,17 +12,18 @@ import { Link } from "react-router-dom";
 const Navbar = ({ scrollPosition }) => {
   const { t } = useTranslation();
   const navbarLink = [
-    { id: "#about", text: t("navbar.item1") },
-    { id: "#projects", text: t("navbar.item2") },
-    { id: "#career", text: t("navbar.item3") },
-    { id: "#news", text: t("navbar.item4") },
-    { id: "#contacts", text: t("navbar.item5") },
+    { path: "/about", text: t("navbar.item1"), target: false },
+    { path: "/projects", text: t("navbar.item2"),target: false },
+    { path: "https://hr.di.uz/", text: t("navbar.item3"), target: true },
+    { path: "/news", text: t("navbar.item4"),target: false },
+    { path: "/contacts", path2: "#contacts", text: t("navbar.item5"),target: false },
   ];
   const languages = [
     { id: "en", lang: "EN" },
     { id: "ru", lang: "RU" },
     { id: "uz", lang: "UZ" },
   ];
+  const url = window.location.href.split("/")[3]
   const [activeLang, setActiveLang] = useState("EN");
   useEffect(() => {
     let lang = sessionStorage.getItem("lang");
@@ -53,15 +54,15 @@ const Navbar = ({ scrollPosition }) => {
         />
         <h2 className=" uppercase font-[500] w-[100px]">discover invest</h2>
       </Link>
-      <ul className="hidden lg:flex gap-[20px] xl:gap-[50px]">
+      <ul className="hidden lg:flex gap-[30px] xl:gap-[50px]">
         {navbarLink?.map((item, index) => {
           return (
             <li
               key={index}
               className="group relative flex gap-[5px] items-center"
             >
-              <a href={item?.id}>{item?.text}</a>
-              <div className=" absolute w-[6px] h-[6px] opacity-0 group-hover:opacity-100 ease-in-out duration-500 rotate-[45deg] bg-purple-600 left-[-15px]"></div>
+              <Link to={item?.path}>{item?.text}</Link>
+              <div className={`absolute w-[6px] h-[6px] opacity-0 group-hover:opacity-100 ease-in-out duration-500 rotate-[45deg] bg-purple-600 left-[-15px] ${"/" + url === item?.path || "/" + url === item?.path + item?.path2 ? " opacity-100" : ""}`}></div>
             </li>
           );
         })}
@@ -112,7 +113,7 @@ const Navbar = ({ scrollPosition }) => {
       >
         <FaPhoneAlt size={14} />
       </a>
-      <button onClick={()=>setSideBar(!sideBar)} className={`${sideBar ? "text-black" : ""} ease-in-out duration-500 relative z-30`}>
+      <button onClick={()=>setSideBar(!sideBar)} className={`${sideBar ? "text-black" : ""} lg:hidden ease-in-out duration-500 relative z-30`}>
         <HiMiniBars3BottomRight size={24} />
       </button>
       <aside className={`${sideBar ? " left-0" : "left-[-2000px] z-[-1]"} top-0 ease-in-out duration-500 z-20 fixed w-[100%] h-[100vh] shadow-md bg-white text-black flex pt-[170px] items-center flex-col gap-[20px]`}>
@@ -122,9 +123,10 @@ const Navbar = ({ scrollPosition }) => {
               <li
                 key={index}
                 className="group relative flex gap-[5px] items-center text-[30px] md:text-[40px] font-[600]"
+                onClick={()=>setSideBar(!sideBar)}
               >
-                <a href={item?.id}>{item?.text}</a>
-                <div className="absolute w-[12px] h-[12px] opacity-0 group-hover:opacity-100 ease-in-out duration-500 rotate-[45deg] bg-purple-600 left-[-25px]"></div>
+                <Link target={item?.target ? "blank" : ""} to={item?.path}>{item?.text}</Link>
+                <div className={`${"/" + url === item?.path || "/" + url === item?.path + item?.path2 ? " opacity-100" : ""} absolute w-[12px] h-[12px] opacity-0 group-hover:opacity-100 ease-in-out duration-500 rotate-[45deg] bg-purple-600 left-[-25px]`}></div>
               </li>
             );
           })}

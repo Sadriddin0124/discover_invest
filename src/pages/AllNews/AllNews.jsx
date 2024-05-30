@@ -64,7 +64,7 @@ const AllNews = () => {
   return (
     <section className="w-[100%] flex flex-col items-center">
         <Navbar scrollPosition={scrollPosition} />
-      <div className="text-white px-[20px] relative md:px-[80px] gap-[20px] py-[80px] flex w-[100%] items-start justify-between flex-col md:flex-row md:items-center">
+      <div className="text-white px-[20px] relative md:px-[80px] gap-[20px] py-[80px] flex w-[100%] h-[400px] items-start justify-between flex-col md:flex-row md:items-center">
         <h1 className="text-[50px] lg:text-[70px] font-[600]">{title}</h1>
         <p className="max-w-[600px]">{subtitle}</p>
         <img src={SingleImg} alt="SingleImg" className="w-[100%] h-[100%] absolute object-cover left-0 top-0 brightness-50 z-[-1]"/>

@@ -24,7 +24,7 @@ const About = () => {
     });
   }, []);
   return (
-    <section className="pt-[80px] pb-[30px] w-[100%] h-[900px] relative flex flex-col items-center">
+    <section id="about" className="pt-[80px] pb-[30px] w-[100%] h-[900px] relative flex flex-col items-center">
       <svg
         className="absolute left-0 top-[100px] self-start"
         xmlns="http://www.w3.org/2000/svg"
