@@ -12,10 +12,10 @@ const AboutSquares = () => {
     { num: "250+", text: t("about.techniques"), img: AboutImg },
     { num: "9+", text: t("about.hospitals"), img: AboutImg },
   ];
-  return <section className="px-[100px] py-[100px] flex flex-wrap justify-center xl:justify-start gap-[20px]">
+  return <section className="px-[20px] md:px-[100px] py-[100px] flex flex-wrap justify-center xl:justify-start gap-[20px]">
     {data?.map((item, index) => {
             return (
-              <div key={index} className={`border cursor-pointer group w-[100%] p-[30px] md:w-[300px] h-[250px] md:h-[190px] relative flex flex-col`}>
+              <div key={index} className={`border cursor-pointer group w-[100%] p-[30px] md:w-[300px] h-[200px] sm:h-[250px] md:h-[190px] relative flex flex-col`}>
                 <img
                   src={item?.img}
                   alt={item?.text}

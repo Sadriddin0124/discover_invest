@@ -117,7 +117,7 @@ const Navbar = ({ scrollPosition }) => {
         <HiMiniBars3BottomRight size={24} />
       </button>
       <aside className={`${sideBar ? " left-0" : "left-[-2000px] z-[-1]"} top-0 ease-in-out duration-500 z-20 fixed w-[100%] h-[100vh] shadow-md bg-white text-black flex pt-[170px] items-center flex-col gap-[20px]`}>
-        <ul className="flex flex-col gap-[30px]">
+        <ul className="flex flex-col gap-[30px] mt-[30px]">
           {navbarLink?.map((item, index) => {
             return (
               <li

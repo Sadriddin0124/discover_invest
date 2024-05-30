@@ -5,33 +5,29 @@ import { Link } from "react-router-dom";
 const AboutSection = () => {
   const { t } = useTranslation();
   const title = t("aboutPage.title1");
-  const top = t("aboutPage.top1");
   const desc = t("aboutPage.desc1");
   const btn = t("aboutPage.btn1");
   return (
     <section className="w-[100%] py-[100px] relative flex justify-center px-[100px]">
-      <div className="w-[100%] flex justify-between items-start gap-[20px]">
-        <div>
+      <div className="w-[100%] flex lg:flex-row flex-col justify-between items-start gap-[20px]">
+        <div className="relative">
           <div className="flex items-center gap-[10px]">
             <div className="h-[3px] bg-purple-600 w-[35px]"></div>
-            <h2 className="text-[24px] sm:text-[40px] font-[600]">{top}</h2>
+            <h2 className="text-[24px] sm:text-[40px] font-[600]">{title}</h2>
           </div>
-          <h1 className="text-[24px] sm:text-[45px] font-[600] ml-[50px] sm:ml-[100px]">
-            {title}
-          </h1>
-      <svg
-        className="mt-[20px]"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 658 855"
-        fill="none"
-      >
-        <g opacity="0.1">
-          <path
-            d="M259.418 86.7901V0H657.706V591.526H541.891L541.954 536.143H605.022V55.3831H312.102V86.7584H511.563V854.691H0V86.7584H259.386L259.418 86.7901ZM99.6832 795.116H450.591V591.557H303.083L99.6832 795.116ZM259.418 554.371V186.061H315.754V532.491H450.591V146.397H61.004V752.943L259.418 554.371Z"
-            fill="#8F8F8F"
-          ></path>
-        </g>
-      </svg>
+          <svg
+            className="mt-[20px] absolute left-0 top-[200px]"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 658 855"
+            fill="none"
+          >
+            <g opacity="0.1">
+              <path
+                d="M259.418 86.7901V0H657.706V591.526H541.891L541.954 536.143H605.022V55.3831H312.102V86.7584H511.563V854.691H0V86.7584H259.386L259.418 86.7901ZM99.6832 795.116H450.591V591.557H303.083L99.6832 795.116ZM259.418 554.371V186.061H315.754V532.491H450.591V146.397H61.004V752.943L259.418 554.371Z"
+                fill="#8F8F8F"
+              ></path>
+            </g>
+          </svg>
         </div>
         <div className="max-w-[600px] flex flex-col gap-[30px]">
           <img src={AboutImg1} alt="AboutImg1" />

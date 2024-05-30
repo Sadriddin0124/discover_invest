@@ -101,7 +101,6 @@ const Contacts2 = () => {
                 </h2>
               </div>
               <h1 className="text-[30px] md:text-[40px] font-[600] mb-[50px]">
-                {question_b}
               </h1>
               <div className="flex gap-[20px] w-[100%] items-center md:items-start justify-between flex-wrap max-w-[800px]">
                 {data?.map((item, index) => {

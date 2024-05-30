@@ -127,7 +127,7 @@ const AboutSlider = () => {
           </div>
         ))}
       </Slider>
-      <div className="mt-[100px] w-[100%] flex justify-center gap-[100px] items-center">
+      <div className="mt-[100px] w-[100%] flex justify-center flex-wrap px-[20px] gap-[100px] items-center">
         <img src={AboutImg} alt="AboutImg" className="w-[250px] h-[250px]" />
         <div className="flex flex-col gap-[20px] max-w-[400px]">
           <p className="text-[28px] font-serif font-[500]">
