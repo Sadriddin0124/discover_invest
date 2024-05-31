@@ -75,7 +75,7 @@ const Contacts = () => {
             <div className="h-[3px] bg-purple-600 w-[35px]"></div>
             <h2 className="text-[24px] md:text-[40px] font-[600]">{title}</h2>
           </div>
-          <div className="flex gap-[20px] flex-col items-center md:items-start md:flex-row justify-between w-[100%]">
+          <div className="flex gap-[20px] flex-col items-center md:items-start sm:flex-row justify-between w-[100%]">
             {data?.map((item, index) => {
               return (
                 <div key={index} className="flex flex-col max-w-[180px]">
@@ -125,7 +125,7 @@ const Contacts = () => {
                 className="py-[15px] outline-none px-[25px] bg-zinc-100"
               />
             </div>
-            <button className="py-[15px] px-[25px] bg-purple-600 mt-[20px] xl:mt-0 text-white w-[100%]">
+            <button className="py-[15px] whitespace-nowrap px-[25px] bg-purple-600 mt-[20px] xl:mt-0 text-white w-[100%]">
               {feedback}
             </button>
           </form>

@@ -79,7 +79,7 @@ const Navbar = ({ scrollPosition }) => {
         </a>
       </div>
       <div className="relative lang cursor-pointer z-30 mr-[60px] sm:mr-0 flex">
-        <p className={`flex gap-[10px] items-center text-[14px] ease-in-out duration-500 ${sideBar ? "text-black" : ""}`}>
+        <p className={`flex gap-[10px] items-center text-[14px] ease-in-out duration-500 ${sideBar ? "hidden" : ""}`}>
           {activeLang} <IoIosArrowDown className=" text-purple-600" />
         </p>
         <div className="absolute bg-purple-600 flex flex-col text-white p-[20px] top-[50px] transition-all left-[-10px] opacity-0">
@@ -116,17 +116,17 @@ const Navbar = ({ scrollPosition }) => {
       <button onClick={()=>setSideBar(!sideBar)} className={`${sideBar ? "text-black" : ""} lg:hidden ease-in-out duration-500 relative z-30`}>
         <HiMiniBars3BottomRight size={24} />
       </button>
-      <aside className={`${sideBar ? " left-0" : "left-[-2000px] z-[-1]"} top-0 ease-in-out duration-500 z-20 fixed w-[100%] h-[100vh] shadow-md bg-white text-black flex pt-[170px] items-center flex-col gap-[20px]`}>
-        <ul className="flex flex-col gap-[30px] mt-[30px]">
+      <aside className={`${sideBar ? " left-0" : "left-[-2000px] z-[-1]"} top-0 ease-in-out duration-500 z-[20] bg-purple-600 fixed w-[300px] overflow-auto h-[100vh] shadow-md text-black flex py-[40px] items-center flex-col gap-[10px]`}>
+        <ul className="flex flex-col gap-[10px]">
           {navbarLink?.map((item, index) => {
             return (
               <li
                 key={index}
-                className="group relative flex gap-[5px] items-center text-[30px] md:text-[40px] font-[600]"
+                className="group relative flex gap-[5px] items-center text-[16px] md:text-[40px] text-white font-[500]"
                 onClick={()=>setSideBar(!sideBar)}
               >
                 <Link target={item?.target ? "blank" : ""} to={item?.path}>{item?.text}</Link>
-                <div className={`${"/" + url === item?.path || "/" + url === item?.path + item?.path2 ? " opacity-100" : ""} absolute w-[12px] h-[12px] opacity-0 group-hover:opacity-100 ease-in-out duration-500 rotate-[45deg] bg-purple-600 left-[-25px]`}></div>
+                <div className={`${"/" + url === item?.path || "/" + url === item?.path + item?.path2 ? " opacity-100" : ""} absolute w-[6px] h-[6px] opacity-0 group-hover:opacity-100 ease-in-out duration-500 rotate-[45deg] bg-white left-[-25px]`}></div>
               </li>
             );
           })}

@@ -8,7 +8,6 @@ import Aos from "aos";
 const Advantages = () => {
   const { t } = useTranslation();
   const title = t("advantages.title");
-  const top = t("advantages.top");
   const data = [
     {icon: <PiUsersThree/>, title: t("advantages.title1"), desc: t("advantages.desc1")},
     {icon: <PiChatsCircleThin/>, title: t("advantages.title2"), desc: t("advantages.desc2")},
@@ -25,9 +24,8 @@ const Advantages = () => {
       <div className="w-[90%] flex flex-col items-start">
         <div data-aos="fade-right" className="flex items-center gap-[10px]">
           <div className="h-[3px] bg-purple-600 w-[35px]"></div>
-          <h2 className="text-[24px] md:text-[40px] font-[600]">{top}</h2>
+          <h2 className="text-[24px] md:text-[40px] font-[600]">{title}</h2>
         </div>
-        <h1 data-aos="fade-right" className="text-[24px] md:text-[45px] font-[600] ml-[50px] md:ml-[100px]">{title}</h1>
         <div data-aos="fade-right" className="flex w-[100%] justify-center md:justify-between mt-[30px] gap-[20px] flex-wrap self-center">
             {
                 data?.map((item,index)=> {

@@ -14,7 +14,7 @@
     },
     "about": {
         "top": "About",
-        "title": "DISCOVER INVEST",
+        "title": "About DISCOVER INVEST",
         "desc": "We don't just create projects, we create new opportunities. By building state-scale facilities, we are building the future. We care about the environment: the company takes full responsibility for the environmental aspects related to the construction and operation of buildings and infrastructure.",
         "employees": "The number of employees",
         "projects": "projects",
@@ -38,8 +38,7 @@
         "desc4": "Our values Since the founding (LLC) 'Discover Invest' in 2008, we have been working only with professionals. Our specialists use advanced technologies and an innovative approach to business.Regardless of the time and place of operation, we remain committed to our values: staff and safety, continuous improvement and the trust of our customers."
     },
     "advantages": {
-        "top": "Our",
-        "title": "advantages",
+        "title": "Our advantages",
         "title1": "Our team",
         "title2": "Positive customer approach",
         "title3": "All work guaranteed",
@@ -48,8 +47,7 @@
         "desc3": "We perform our mission carefully and appreciate your belief in our company All mistakes were clearly corrected"
     },
     "projects": {
-        "top": "Our",
-        "title": "Projects",
+        "title": "Our Projects",
         "title1": "Magic City",
         "desc1": "This is a large-scale socially significant project. The cultural and entertainment cluster in Tashkent is one of the new attractions.",
         "title2": "Gardens Residence",
@@ -69,8 +67,7 @@
         "subtitle": "We don't just create projects, we create new opportunities. By building state-scale facilities, we are building the future. We care about the environment:"
     },
     "news": {
-        "top": "Company",
-        "title": "news",
+        "title": "Company news",
         "date1": "2023-01-27",
         "date2": "2022-10-02",
         "date3": "2022-12-19",
@@ -132,8 +129,7 @@
         "leave_ques": "Leave your question ..."
     },
     "team": {
-        "top": "Our",
-        "title": "team",
+        "title": "Our team",
         "name1": "Norbekov Shavkat Bo'riboy o'g'li",
         "name2": "Artiqbaev Saxobiddin Doniyor o'g'li",
         "name3": "Kuziev Jakhongir Bakhodirovich",

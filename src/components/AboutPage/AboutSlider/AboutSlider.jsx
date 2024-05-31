@@ -127,13 +127,13 @@ const AboutSlider = () => {
           </div>
         ))}
       </Slider>
-      <div className="mt-[100px] w-[100%] flex justify-center flex-wrap px-[20px] gap-[100px] items-center">
+      <div className="mt-[100px] w-[100%] flex justify-center flex-wrap px-[20px] gsp-[20px] md:gap-[100px] items-center">
         <img src={AboutImg} alt="AboutImg" className="w-[250px] h-[250px]" />
-        <div className="flex flex-col gap-[20px] max-w-[400px]">
+        <div className="flex flex-col items-center md:items-start gap-[20px] max-w-[400px]">
           <p className="text-[28px] font-serif font-[500]">
             {data[activeIndex]?.year}
           </p>
-          <p className=" font-sans text-[16px] font-[500]">
+          <p className="text-center md:text-left font-sans text-[16px] font-[500]">
             {data[activeIndex]?.desc}
           </p>
         </div>

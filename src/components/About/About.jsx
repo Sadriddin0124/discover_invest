@@ -5,7 +5,6 @@ import Aos from "aos";
 const About = () => {
   const { t } = useTranslation();
   const title = t("about.title");
-  const top = t("about.top");
   const desc = t("about.desc");
   const data = [
     { num: "", text: "", img: "" },
@@ -41,11 +40,10 @@ const About = () => {
         </g>
       </svg>
       <div className="w-[90%] flex flex-col items-start relative">
-        <div className="flex items-center gap-[10px]">
+        <div data-aos="fade-right" className="flex items-center gap-[10px] max-w-[450px]">
           <div className="h-[3px] bg-purple-600 w-[35px]"></div>
-          <h2 className="text-[24px] sm:text-[40px] font-[600]">{top}</h2>
+          <h2 className="text-[24px] sm:text-[40px] font-[600]">{title}</h2>
         </div>
-        <h1 className="text-[24px] sm:text-[45px] font-[600] ml-[50px] sm:ml-[100px]">{title}</h1>
         <p className="max-w-[400px] sm:absolute top-[140px]" data-aos="fade-up">{desc}</p>
         <div data-aos="fade-down-left" className="w-[260px] sm:w-[470px] lg:w-[705px] grid grid-cols-2 lg:grid-cols-3 mt-[20px] sm:mt-[180px] self-center lg:self-end">
           {data?.map((item, index) => {

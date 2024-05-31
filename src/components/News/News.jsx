@@ -44,7 +44,6 @@ const News = () => {
     },
   ];
   const title = t("news.title");
-  const top = t("news.top");
   const btn = t("news.btn");
   let settings = {
     dots: true,
@@ -98,13 +97,12 @@ const News = () => {
       />
       <div data-aos="fade-right" className="flex items-center gap-[10px]">
         <div className="h-[3px] bg-purple-600 w-[35px]"></div>
-        <h2 className="text-[24px] md:text-[40px] font-[600]">{top}</h2>
+        <h2 className="text-[24px] md:text-[40px] font-[600]">{title}</h2>
       </div>
-      <h1 data-aos="fade-right" className="text-[24px] md:text-[45px] font-[600] ml-[50px] md:ml-[100px] mb-[40px]">{title}</h1>
       <Slider {...settings}>
         {data?.map((item, index) => {
           return <div key={index} className="px-[15px]">
-            <NewsCard item={item} />;
+            <NewsCard item={item} />
           </div>
         })}
       </Slider>

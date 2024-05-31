@@ -19,7 +19,6 @@ const Team = () => {
     {name: t("team.name5"), desc: t("team.desc2"), img: Team5},
   ]
   const title = t("team.title")
-  const top = t("team.top")
   let settings = {
     dots: true,
     infinite: true,
@@ -67,9 +66,8 @@ const Team = () => {
     <div className="slider-container w-[90%] ml-[5%] my-[40px]">
         <div data-aos="fade-right" className="flex items-center gap-[10px]">
           <div className="h-[3px] bg-purple-600 w-[35px]"></div>
-          <h2 className="text-[24px] md:text-[40px] font-[600]">{top}</h2>
+          <h2 className="text-[24px] md:text-[40px] font-[600]">{title}</h2>
         </div>
-        <h1 data-aos="fade-right" className="text-[24px] md:text-[45px] font-[600] ml-[50px] md:ml-[100px] mb-[40px]">{title}</h1>
       <Slider {...settings}>
         {
             data?.map((item,index)=> {

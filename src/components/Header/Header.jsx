@@ -9,11 +9,11 @@ const Header = () => {
     const btn1 = t("header.btn1")
     const btn2 = t("header.btn2")
   return (
-    <header className='w-[100%] h-[94vh] relative flex items-center md:justify-start justify-center'>
+    <header className='w-[100%] min-h-[94vh] relative flex items-center md:justify-start justify-center'>
       <video muted preload='auto' autoPlay loop poster={Poster} className='w-[100%] h-[100%] absolute object-cover brightness-50'>
         <source src={Opening} type='video/mp4'/>
       </video>
-      <div className='px-[30px] relative justify-center md:items-start items-center z-10 sm:ml-[100px] text-white w-[100%] max-w-[700px] flex flex-col sm:items-start gap-[30px]'>
+      <div className='px-[30px] py-[100px] relative justify-center md:items-start items-center z-10 sm:ml-[100px] text-white w-[100%] max-w-[700px] flex flex-col sm:items-start gap-[30px]'>
         <h1 className='text-[40px] text-center sm:text-start w-[100%] sm:text-[80px] font-[600]'>{title}</h1>
         <p>{subtitle}</p>
         <div className='flex gap-[20px] flex-wrap justify-center'>

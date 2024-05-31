@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const NewsCard = ({item}) => {
   return (
-    <div className='max-w-[380px] w-[100%] my-[15px] h-[300px] mx-[15px] relative p-[20px] flex gap-[40px] flex-col transition-colors duration-300 overflow-hidden group cursor-pointer hover:bg-gradient-to-b from-transparent to-purple-600'>
+    <div className='max-w-[380px] w-[100%] my-[15px] h-[300px] relative p-[20px] flex gap-[40px] flex-col transition-colors duration-300 overflow-hidden group cursor-pointer hover:bg-gradient-to-b from-transparent to-purple-600'>
       <div className='flex items-center gap-[5px]'>
         <div className='w-[8px] h-[8px] bg-purple-600 rounded-full'></div>
         <span className='text-[12px] text-white'>{item?.date}</span>

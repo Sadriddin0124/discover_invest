@@ -11,7 +11,6 @@ import Aos from "aos";
 const Projects = () => {
   const { t } = useTranslation();
   const title = t("projects.title");
-  const top = t("projects.top");
   const btn = t("projects.btn");
   const data = [
     { title: t("projects.title1"), desc: t("projects.desc1"), img: Project1, aos: "fade-right" },
@@ -39,16 +38,8 @@ const Projects = () => {
         } flex items-center gap-[10px] self-start`}
       >
         <div className="h-[3px] bg-purple-600 w-[35px]"></div>
-        <h2 className="text-[24px] md:text-[40px] font-[600]">{top}</h2>
+        <h2 className="text-[24px] md:text-[40px] font-[600]">{title}</h2>
       </div>
-      <h1
-      data-aos="fade-right"
-        className={`${
-          url === "projects" ? "hidden" : ""
-        } text-[24px] md:text-[45px] font-[600] self-start ml-[100px] mb-[40px]`}
-      >
-        {title}
-      </h1>
       <div className="w-[100%] lg:w-[90%] grid-cols-1 grid sm:grid-cols-2 gap-[20px] md:gap-[40px]">
         {data?.map((item, index) => {
           return (
