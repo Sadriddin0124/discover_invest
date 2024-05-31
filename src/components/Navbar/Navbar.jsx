@@ -2,13 +2,14 @@ import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Logo from "../../assets/logo.png";
 import { FaFacebookF } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
+import { RiCloseFill, RiInstagramFill } from "react-icons/ri";
 import { BiLogoTelegram } from "react-icons/bi";
 import { switchLang } from "../../plugins/changeLang";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+
 const Navbar = ({ scrollPosition }) => {
   const { t } = useTranslation();
   const navbarLink = [
@@ -42,7 +43,7 @@ const Navbar = ({ scrollPosition }) => {
   return (
     <nav
       className={`${
-        scrollPosition > 100
+        scrollPosition > 20
           ? "bg-white text-black"
           : "text-white bg-transparent"
       } flex w-[100%] py-[20px] px-[10px] sm:px-[20px] md:px-[40px] xl:px-[100px] items-center justify-between left-0 top-0 fixed z-[30]`}>
@@ -79,7 +80,7 @@ const Navbar = ({ scrollPosition }) => {
         </a>
       </div>
       <div className="relative lang cursor-pointer z-30 mr-[60px] sm:mr-0 flex">
-        <p className={`flex gap-[10px] items-center text-[14px] ease-in-out duration-500 ${sideBar ? "hidden" : ""}`}>
+        <p className={`flex gap-[10px] items-center text-[14px] ease-in-out duration-500 ${sideBar ? "opacity-0" : ""}`}>
           {activeLang} <IoIosArrowDown className=" text-purple-600" />
         </p>
         <div className="absolute bg-purple-600 flex flex-col text-white p-[20px] top-[50px] transition-all left-[-10px] opacity-0">
@@ -113,10 +114,11 @@ const Navbar = ({ scrollPosition }) => {
       >
         <FaPhoneAlt size={14} />
       </a>
-      <button onClick={()=>setSideBar(!sideBar)} className={`${sideBar ? "text-black" : ""} lg:hidden ease-in-out duration-500 relative z-30`}>
+      <button onClick={()=>setSideBar(!sideBar)} className={`${sideBar ? "opacity-0" : ""} lg:hidden ease-in-out duration-500 relative z-30`}>
         <HiMiniBars3BottomRight size={24} />
       </button>
-      <aside className={`${sideBar ? " left-0" : "left-[-2000px] z-[-1]"} top-0 ease-in-out duration-500 z-[20] bg-purple-600 fixed w-[300px] overflow-auto h-[100vh] shadow-md text-black flex py-[40px] items-center flex-col gap-[10px]`}>
+      <aside className={`${sideBar ? " left-0" : "left-[-2000px] z-[-1]"} top-0 ease-in-out duration-500 z-[20] bg-purple-600 fixed w-[350px] overflow-auto h-[100vh] shadow-md text-black flex py-[40px] items-center flex-col gap-[10px]`}>
+        <button className="text-[28px] absolute top-[10px] right-[10px] text-white" onClick={()=>setSideBar(!sideBar)}><RiCloseFill/></button>
         <ul className="flex flex-col gap-[10px]">
           {navbarLink?.map((item, index) => {
             return (
