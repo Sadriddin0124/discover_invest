@@ -38,8 +38,16 @@ const Navbar = ({ scrollPosition }) => {
     switchLang(id);
     setActiveLang(lang);
     sessionStorage.setItem("lang", lang);
+    setLangVisible(!langVisible)
   };
   const [sideBar, setSideBar] = useState(false)
+  const [langVisible,setLangVisible] = useState(false)
+    const handleScrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+      });
+    };
   return (
     <nav
       className={`${
@@ -47,7 +55,7 @@ const Navbar = ({ scrollPosition }) => {
           ? "bg-white text-black"
           : "text-white bg-transparent"
       } flex w-[100%] py-[20px] px-[10px] sm:px-[20px] md:px-[40px] xl:px-[100px] items-center justify-between left-0 top-0 fixed z-[30]`}>
-      <Link to={"/"} className="cursor-pointer flex items-center">
+      <Link onClick={handleScrollToTop} to={"/"} className="cursor-pointer flex items-center">
         <img
           src={Logo}
           alt="logo"
@@ -59,6 +67,7 @@ const Navbar = ({ scrollPosition }) => {
         {navbarLink?.map((item, index) => {
           return (
             <li
+            onClick={handleScrollToTop}
               key={index}
               className="group relative flex gap-[5px] items-center"
             >
@@ -79,11 +88,11 @@ const Navbar = ({ scrollPosition }) => {
           <BiLogoTelegram />
         </a>
       </div>
-      <div className="relative lang cursor-pointer z-30 mr-[60px] sm:mr-0 flex">
-        <p className={`flex gap-[10px] items-center text-[14px] ease-in-out duration-500 ${sideBar ? "opacity-0" : ""}`}>
-          {activeLang} <IoIosArrowDown className=" text-purple-600" />
+      <div className="relative cursor-pointer z-30 mr-[60px] sm:mr-0 flex">
+        <p onClick={()=>setLangVisible(!langVisible)} className={`flex gap-[10px] items-center text-[14px] ease-in-out duration-500 ${sideBar ? "opacity-0" : ""}`}>
+          {activeLang} <IoIosArrowDown className=" text-purple-600" size={20}/>
         </p>
-        <div className="absolute bg-purple-600 flex flex-col text-white p-[20px] top-[50px] transition-all left-[-10px] opacity-0">
+        <div className={`absolute bg-purple-600 flex flex-col text-white p-[20px] top-[30px] transition-all left-[-10px] ${langVisible ? "" : "hidden"}`}>
           {languages?.map((item, index) => {
             return (
               <span
@@ -110,7 +119,7 @@ const Navbar = ({ scrollPosition }) => {
       </div>
       <a
         href="tel: + 998 (71) 288 88 88"
-        className="tel p-[10px] sm:p-[15px] fixed z-50 top-[30px] lg:top-[85vh] right-[15%] sm:right-[70px] md:right-[100px] lg:right-[100px] bg-purple-600 text-white"
+        className={`tel p-[10px] sm:p-[15px] fixed z-50 top-[30px] lg:top-[85vh] right-[15%] sm:right-[70px] md:right-[100px] lg:right-[100px] bg-purple-600 text-white ${sideBar ? "hidden" : ""}`}
       >
         <FaPhoneAlt size={14} />
       </a>
@@ -127,7 +136,7 @@ const Navbar = ({ scrollPosition }) => {
                 className="group relative flex gap-[5px] items-center text-[16px] md:text-[40px] text-white font-[500]"
                 onClick={()=>setSideBar(!sideBar)}
               >
-                <Link target={item?.target ? "blank" : ""} to={item?.path}>{item?.text}</Link>
+                <Link onClick={handleScrollToTop} target={item?.target ? "blank" : ""} to={item?.path}>{item?.text}</Link>
                 <div className={`${"/" + url === item?.path || "/" + url === item?.path + item?.path2 ? " opacity-100" : ""} absolute w-[6px] h-[6px] opacity-0 group-hover:opacity-100 ease-in-out duration-500 rotate-[45deg] bg-white left-[-25px]`}></div>
               </li>
             );

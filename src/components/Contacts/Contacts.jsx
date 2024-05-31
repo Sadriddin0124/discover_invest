@@ -65,7 +65,7 @@ const Contacts = () => {
     <section className="w-[100%] flex flex-col items-end justify-content-center py-[40px] gap-[30px]">
       <ToastContainer/>
       <div className="w-[100%] lg:h-[100vh] flex-col-reverse lg:flex-row xl:h-[70vh] flex">
-        <div className="w-[100%] lg:w-[55%] flex flex-col items-start gap-[50px] relative pr-[20px] pl-[5%]">
+        <div className="w-[100%] lg:w-[55%] flex flex-col items-start gap-[50px] relative pr-[20px] py-[40px] pl-[5%]">
           <img
             src={ContactsImage}
             alt="ContactsImage"
@@ -75,10 +75,10 @@ const Contacts = () => {
             <div className="h-[3px] bg-purple-600 w-[35px]"></div>
             <h2 className="text-[24px] md:text-[40px] font-[600]">{title}</h2>
           </div>
-          <div className="flex gap-[20px] flex-col items-center md:items-start sm:flex-row justify-between w-[100%]">
+          <div className="flex gap-[20px] flex-col items-start sm:items-center md:items-start sm:flex-row justify-between w-[100%]">
             {data?.map((item, index) => {
               return (
-                <div key={index} className="flex flex-col max-w-[180px]">
+                <div key={index} className="flex flex-col max-w-[300px] sm:max-w-[180px]">
                   <div className="flex gap-[20px]">
                     <div className="text-[26px] text-purple-600">
                       {item?.icon}
