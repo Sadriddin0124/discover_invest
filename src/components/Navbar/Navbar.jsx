@@ -75,6 +75,7 @@ const Navbar = ({ scrollPosition }) => {
         <img
           src={Logo}
           alt="logo"
+          onClick={setLoad}
           className="w-[60px] h-[60px] mix-blend-multiply"
         />
         <h2 className="hidden sm:block uppercase font-[500] w-[100px]">

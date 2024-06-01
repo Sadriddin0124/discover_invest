@@ -44,7 +44,7 @@ const About = () => {
           <div className="h-[3px] bg-purple-600 w-[35px]"></div>
           <h2 className="text-[24px] sm:text-[40px] font-[600]">{title}</h2>
         </div>
-        <p className="max-w-[400px] sm:absolute top-[140px]" data-aos="fade-up">{desc}</p>
+        <p className="max-w-[400px] mt-[20px] sm:absolute top-[140px]" data-aos="fade-up">{desc}</p>
         <div data-aos="fade-down-left" className="w-[260px] sm:w-[470px] lg:w-[705px] grid grid-cols-2 lg:grid-cols-3 mt-[20px] sm:mt-[180px] self-center lg:self-end">
           {data?.map((item, index) => {
             return (

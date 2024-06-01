@@ -64,7 +64,7 @@ const Team = () => {
   }, []);
   return (
     <div className="slider-container w-[90%] ml-[5%] my-[40px]">
-        <div data-aos="fade-right" className="flex items-center gap-[10px]">
+        <div data-aos="fade-right" className="flex items-center mb-[40px] gap-[10px]">
           <div className="h-[3px] bg-purple-600 w-[35px]"></div>
           <h2 className="text-[24px] md:text-[40px] font-[600]">{title}</h2>
         </div>
