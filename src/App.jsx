@@ -8,8 +8,8 @@ import AboutPage from "./pages/AboutPage/AboutPage";
 import Contacts from "./pages/Contacts/Contacts";
 import Loader from "./components/Loader/Loader";
 
-export const setLoad = () => { 
-  setIsOnline(true) 
+export const setLoad = () => {
+  setIsOnline(true);
 };
 const App = () => {
   const [isOnline, setIsOnline] = useState(false);
@@ -20,18 +20,17 @@ const App = () => {
   })();
   return (
     <div className="overflow-hidden">
-      {isOnline ? (
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/projects" element={<AllProjects />} />
-          <Route path="/news" element={<AllNews />} />
-          <Route path="/single_news/:id" element={<SingleNews />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contacts" element={<Contacts />} />
-        </Routes>
-      ) : (
+      <div className={isOnline ? "hidden" : ""}>
         <Loader />
-      )}
+      </div>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/projects" element={<AllProjects />} />
+        <Route path="/news" element={<AllNews />} />
+        <Route path="/single_news/:id" element={<SingleNews />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contacts" element={<Contacts />} />
+      </Routes>
     </div>
   );
 };
