@@ -1,10 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { FaLocationDot } from "react-icons/fa6";
-import { BiLogoTelegram, BiSolidPhoneCall } from "react-icons/bi";
 import { MdOutlineAccessAlarms } from "react-icons/md";
-import { FaFacebookF } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
 import ContactsImage from "../../assets/news.svg";
 import Novas from "../../assets/novas.svg";
 import Flag from "../../assets/flag.png";
@@ -12,11 +9,11 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { HiArrowDown } from "react-icons/hi";
+import { BiSolidPhoneCall } from "react-icons/bi";
 
 const Contacts2 = () => {
   const { t } = useTranslation();
   const question = t("contactsPage.question");
-  const question_b = t("contactsPage.question_b");
   const data = [
     {
       icon: <FaLocationDot />,
@@ -52,6 +49,9 @@ const Contacts2 = () => {
     t("contactsPage.item6"),
     t("contactsPage.item7"),
   ];
+  const nameRef = useRef();
+  const phoneRef = useRef();
+  const messageRef = useRef();
   const handleMessage = async (e) => {
     e.preventDefault();
     let message = {
@@ -70,9 +70,9 @@ const Contacts2 = () => {
       });
       if (response?.status === 200) {
         toast.success(notification);
-        setTimeout(() => {
-          window.location.reload();
-        }, 2000);
+        nameRef.current.value = "";
+        phoneRef.current.value = "+998";
+        messageRef.current.value = "";
       }
     } catch (error) {
       toast.error(notification_err);
@@ -100,12 +100,14 @@ const Contacts2 = () => {
                   {question}
                 </h2>
               </div>
-              <h1 className="text-[30px] md:text-[40px] font-[600] mb-[50px]">
-              </h1>
+              <h1 className="text-[30px] md:text-[40px] font-[600] mb-[50px]"></h1>
               <div className="flex gap-[20px] w-[100%] items-center md:items-start justify-between flex-wrap max-w-[800px]">
                 {data?.map((item, index) => {
                   return (
-                    <div key={index} className="flex flex-col w-[100%] sm:max-w-[180px]">
+                    <div
+                      key={index}
+                      className="flex flex-col w-[100%] sm:max-w-[180px]"
+                    >
                       <div className="flex gap-[20px]">
                         <div className="text-[26px] text-purple-600">
                           {item?.icon}
@@ -134,6 +136,7 @@ const Contacts2 = () => {
                   className="absolute bottom-[14px] left-[10px]"
                 />
                 <input
+                  ref={phoneRef}
                   required
                   type="text"
                   defaultValue="+998"
@@ -143,6 +146,7 @@ const Contacts2 = () => {
               <div className="flex text-[16px] md:text-[12px] flex-col gap-[10px] w-[100%]">
                 <label className="text-[16px] md:text-[12px]">{name}</label>
                 <input
+                  ref={nameRef}
                   required
                   type="text"
                   placeholder={name2}
@@ -150,7 +154,9 @@ const Contacts2 = () => {
                 />
               </div>
               <div className="flex text-[16px] md:text-[12px] flex-col gap-[10px] w-[100%]">
-                <label className="text-[16px] md:text-[12px]">{department}</label>
+                <label className="text-[16px] md:text-[12px]">
+                  {department}
+                </label>
                 <select
                   required
                   type="text"
@@ -166,6 +172,7 @@ const Contacts2 = () => {
               <div className="flex text-[16px] md:text-[12px] flex-col gap-[10px] w-[100%]">
                 <label className="text-[16px] md:text-[12px]">{ques}</label>
                 <textarea
+                  ref={messageRef}
                   required
                   type="text"
                   placeholder={leave_ques}

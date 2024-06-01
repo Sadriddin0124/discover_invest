@@ -89,7 +89,7 @@ const Navbar = ({ scrollPosition }) => {
         </a>
       </div>
       <div className="relative cursor-pointer z-30 mr-[60px] sm:mr-0 flex">
-        <p onClick={()=>setLangVisible(!langVisible)} className={`flex gap-[10px] items-center text-[14px] ease-in-out duration-500 ${sideBar ? "opacity-0" : ""}`}>
+        <p onClick={()=>setLangVisible(!langVisible)} className={`flex gap-[10px] items-center text-[14px] ease-in-out duration-500 ${sideBar ? "hidden" : ""}`}>
           {activeLang} <IoIosArrowDown className=" text-purple-600" size={20}/>
         </p>
         <div className={`absolute bg-purple-600 flex flex-col text-white p-[20px] top-[30px] transition-all left-[-10px] ${langVisible ? "" : "hidden"}`}>
@@ -126,8 +126,8 @@ const Navbar = ({ scrollPosition }) => {
       <button onClick={()=>setSideBar(!sideBar)} className={`${sideBar ? "opacity-0" : ""} lg:hidden ease-in-out duration-500 relative z-30`}>
         <HiMiniBars3BottomRight size={24} />
       </button>
-      <aside className={`${sideBar ? " left-0" : "left-[-2000px] z-[-1]"} top-0 ease-in-out duration-500 z-[20] bg-purple-600 fixed w-[350px] overflow-auto h-[100vh] shadow-md text-black flex py-[40px] items-center flex-col gap-[10px]`}>
-        <button className="text-[28px] absolute top-[10px] right-[10px] text-white" onClick={()=>setSideBar(!sideBar)}><RiCloseFill/></button>
+      <aside className={`${sideBar ? " left-0" : "left-[-2000px] z-[-1]"} top-0 ease-in-out duration-500 z-[20] bg-purple-600 fixed w-[100%] max-w-[350px] overflow-auto h-[100vh] shadow-md text-black flex py-[40px] items-center flex-col gap-[10px]`}>
+        <button className="text-[28px] absolute top-[35px] right-[10px] text-white" onClick={()=>setSideBar(!sideBar)}><RiCloseFill/></button>
         <ul className="flex flex-col gap-[10px]">
           {navbarLink?.map((item, index) => {
             return (

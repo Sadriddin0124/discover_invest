@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { FaLocationDot } from "react-icons/fa6";
 import { BiLogoTelegram, BiSolidPhoneCall } from "react-icons/bi";
@@ -36,6 +36,8 @@ const Contacts = () => {
   const name2 = t("contacts.name2");
   const feedback = t("contacts.feedback");
   const notification = t("contacts.notification");
+  const nameRef = useRef();
+  const phoneRef = useRef();
   const handleMessage = async (e) => {
     e.preventDefault();
     let message = {
@@ -53,9 +55,8 @@ const Contacts = () => {
       });
       if (response?.status === 200) {
         toast.success(notification)
-        setTimeout(() => {
-          window.location.reload();
-        }, 2000);
+        nameRef.current.value = '';
+    phoneRef.current.value = '+998';
       }
     } catch (error) {
       console.log(error);
@@ -112,14 +113,18 @@ const Contacts = () => {
                 className="absolute bottom-[14px] left-[10px]"
               />
               <input
+              required
+              ref={phoneRef}
                 type="text"
-                placeholder="+998"
+                defaultValue="+998"
                 className="py-[15px] outline-none pl-[40px] pr-[25px] bg-zinc-100"
               />
             </div>
             <div className="flex flex-col gap-[10px] w-[100%] md:w-[46%] xl:w-[35%]">
               <label className="text-[12px]">{name}</label>
               <input
+              required
+              ref={nameRef}
                 type="text"
                 placeholder={name2}
                 className="py-[15px] outline-none px-[25px] bg-zinc-100"
