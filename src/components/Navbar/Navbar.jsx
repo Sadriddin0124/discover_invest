@@ -105,7 +105,7 @@ const Navbar = ({ scrollPosition }) => {
           );
         })}
       </ul>
-      <div className="hidden xl:flex gap-[10px] ml-[10px] xl:ml-[50px] text-[18px]">
+      <div className={`${sideBar ? "hidden" : ""} hidden xl:flex gap-[10px] ml-[10px] xl:ml-[50px] text-[18px]`}>
         <a href="">
           <FaFacebookF />
         </a>
@@ -116,7 +116,7 @@ const Navbar = ({ scrollPosition }) => {
           <BiLogoTelegram />
         </a>
       </div>
-      <div className="relative cursor-pointer z-30 mr-[60px] sm:mr-0 flex">
+      <div className={`relative cursor-pointer z-30 mr-[60px] sm:mr-0 flex ${sideBar && langVisible ? "hidden" : ""}`}>
         <p
           onClick={() => setLangVisible(!langVisible)}
           className={`flex gap-[10px] items-center text-[14px] ease-in-out duration-500 ${
@@ -126,7 +126,7 @@ const Navbar = ({ scrollPosition }) => {
           {activeLang} <IoIosArrowDown className=" text-purple-600" size={20} />
         </p>
         <ul
-          className={`absolute bg-purple-600 flex flex-col text-white p-[20px] top-[30px] transition-all left-[-10px] ${
+          className={`absolute bg-purple-600 text-white p-[20px] top-[30px] transition-all left-[-10px] ${
             langVisible ? "" : "hidden"
           }`}
         >
