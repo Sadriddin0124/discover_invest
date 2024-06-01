@@ -71,7 +71,7 @@ const Team = () => {
       <Slider {...settings}>
         {
             data?.map((item,index)=> {
-                return <div key={index}className="mx-[10px] p-[20px] group cursor-pointer">
+                return <div key={index}className="mx-[10px] pr-[20px] group cursor-pointer">
                     <img src={item?.img} alt={item?.name} className="max-w-[400px] w-[100%] h-[350px] object-cover"/>
                     <div className="flex flex-col mt-[20px]">
                         <h1 className="text-[17px] font-[500] group-hover:text-purple-600 ease-in-out duration-300">{item?.name}</h1>

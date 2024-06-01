@@ -2,6 +2,8 @@ import React from 'react'
 import Opening from "../../assets/opening.mp4"
 import Poster from "../../assets/poster.webp"
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
+import { setLoad } from '../../App'
 const Header = () => {
     const {t} = useTranslation()
     const title = t("header.title")
@@ -17,8 +19,8 @@ const Header = () => {
         <h1 className='text-[40px] text-center sm:text-start w-[100%] sm:text-[80px] font-[600]'>{title}</h1>
         <p>{subtitle}</p>
         <div className='flex gap-[20px] flex-wrap justify-center'>
-            <button className='px-[16px] w-[150px] h-[50px] border border-purple-600 relative group'><span className='absolute bg-purple-600 group-hover:top-0 group-hover:right-0 ease-in-out duration-500 px-[16px] w-[150px] h-[50px] border border-purple-600 flex justify-center items-center top-[5px] right-[5px]'>{btn1}</span></button>
-            <button className='px-[16px] w-[150px] h-[50px] border border-purple-600 relative group'><span className='absolute group-hover:top-0 group-hover:right-0 ease-in-out duration-500 px-[16px] w-[150px] h-[50px] border border-purple-600 flex justify-center items-center top-[5px] right-[5px]'>{btn2}</span></button>
+            <Link onClick={setLoad} to="/projects" className='px-[16px] w-[150px] h-[50px] border border-purple-600 relative group'><span className='absolute bg-purple-600 group-hover:top-0 group-hover:right-0 ease-in-out duration-500 px-[16px] w-[150px] h-[50px] border border-purple-600 flex justify-center items-center top-[5px] right-[5px]'>{btn1}</span></Link>
+            <Link onClick={setLoad} to="/contacts" className='px-[16px] w-[150px] h-[50px] border border-purple-600 relative group'><span className='absolute group-hover:top-0 group-hover:right-0 ease-in-out duration-500 px-[16px] w-[150px] h-[50px] border border-purple-600 flex justify-center items-center top-[5px] right-[5px]'>{btn2}</span></Link>
         </div>
       </div>
     </header>
