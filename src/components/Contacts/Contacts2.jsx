@@ -8,7 +8,6 @@ import Flag from "../../assets/flag.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
-import { HiArrowDown } from "react-icons/hi";
 import { BiSolidPhoneCall } from "react-icons/bi";
 
 const Contacts2 = () => {
