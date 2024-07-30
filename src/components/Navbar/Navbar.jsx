@@ -79,7 +79,7 @@ const Navbar = ({ scrollPosition }) => {
           className="w-[60px] h-[60px] mix-blend-multiply"
         />
         <h2 className="hidden sm:block uppercase font-[500] w-[100px]">
-          ravshanov building
+          Urban Builders
         </h2>
       </Link>
       <ul className="hidden lg:flex gap-[30px] xl:gap-[50px]">

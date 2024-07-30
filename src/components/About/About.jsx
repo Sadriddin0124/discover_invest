@@ -19,7 +19,7 @@ const About = () => {
   ];
   useEffect(() => {
     Aos.init({
-      duration: 800, // Animation duration in milliseconds
+      duration: 800, 
     });
   }, []);
   return (
